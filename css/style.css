@@ -3,11 +3,11 @@
 * {	
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 
 }
 body, html {
 	height: 100%;
-	box-sizing: border-box;
 	outline: none;
 }
 
@@ -188,12 +188,106 @@ body, html {
 	height: 2px;
 }
 
+.social-btn i {
+	font-size: 20px;
+	color: #fff;
+	padding: 10px 10px;
+	margin-left: 10px; 
+	cursor: pointer;
+	margin-top: 10px;
+	transition: 0.3s;
+}
+.social-btn i:hover {
+	color: #fa7268;
+	transform: scale(1.3);
+}
 
+/*---------------------------------------*/
 
+#section-two {
+	background-color: #07070b;
+	border-top: 2px solid #1a1b1f;
+}
 
+.services-container {
+	width: 90%;
+	height: 500px auto;
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+.services-text {
+	padding: 15px 15px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	border-bottom: 2px solid #fa7268;
+	line-height: 35px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.services-text span {
+	color: #fa7268;
+	font-size: 14px;
+}
+.services-text h3 {
+	color: #fff;
+	font-size: 34px;
+}
 
+.services-description {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	color: #ddd;
+	font-size: 16px;
+	line-height: 1.4;
+	text-align: center;
+}
 
+.left-side {
+	width: 25%;
+	height: 100%;
+}
 
+.right-side {
+	width: 75%;
+	height: 500px;
+
+}
+.service-box {
+	width: 80%;
+	height: 150px;
+	background-color: #1a1b1f;
+	margin-bottom: 20px;
+	margin-left: 10%;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+.service-box i {
+	color: #fa7268;
+	font-size: 50px;
+	height: 100%;
+	width: auto;
+	padding: 45px 40px;
+}
+.box-text {
+	font-family: 'Roboto', sans-serif;
+}
+.box-text h6 {
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	margin: 0 0 15px;
+}
+.box-text p {
+	color: #ddd;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*-----------------------------------------------*/
 
 
 
@@ -208,16 +302,40 @@ body, html {
 		margin-left: 0 !important;
 	}
 	#section-one {
-		height: 135%;
+		height: 150%;
 	}
 	.about-text {
 		max-width: 90%;
+		padding-left: 0px !important;
 		text-align: center;
 		margin-top: 30px;
 		margin-left: 0 !important;
 	}
 	.about-hr	{
 		margin-left: 40%;
+	}
+	/*-------------------------------*/
+}
+
+@media only screen and (max-width: 1100px) {
+	#section-two {
+		height: 160%;
+	}
+
+	.services-container {
+		flex-direction: column;
+	}
+	.service-box {
+		width: 95%;
+		margin-left: 2.5%;
+	}
+
+	.right-side {
+		width: 100%;
+	}
+	.left-side {
+		width: 100%;
+		margin-bottom: 30px;
 	}
 
 
