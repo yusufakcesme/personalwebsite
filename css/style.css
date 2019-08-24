@@ -343,6 +343,7 @@ body, html {
 	cursor: pointer;
 	transition: 0.3s;
 	overflow: hidden;
+	border-radius: 8px;
 }
 
 .port-img img {
@@ -353,8 +354,46 @@ body, html {
 }
 
 .port-img img:hover {
-	transform: scale(2) rotate(25deg);
+	transform: scale(1.3);
 }
+
+/*---------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -387,7 +426,7 @@ body, html {
 
 @media only screen and (max-width: 1100px) {
 	#section-two {
-		height: 160%;
+		height: 170%;
 	}
 
 	.services-container {
@@ -406,5 +445,63 @@ body, html {
 		margin-bottom: 30px;
 	}
 
+
+	/*----------------------------*/
+	#section-three {
+		height: 130%;
+	}
+	.portfolio-container {
+		flex-direction: column;
+	}
+	.port-options {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	.port-left {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.port-right {
+		width: 100%;
+	}
+
+
+}
+@media only screen and (max-width: 800px) {
+
+	#section-three {
+		height: 380%;
+	}
+
+	.port-right {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 340px);
+		align-items: center;	
+	}
+	
+
+	.port-img {
+		cursor: pointer;
+		transition: 0.3s;
+		overflow: hidden;
+		border-radius: 8px;
+		margin-left: 0;
+		margin: 0 auto;
+	}
+
+	.port-img img {
+		width: 450px;
+		height: 320px;
+		border-radius: 8px;
+		transition: transform 0.4s ease-in-out;
+	}
+	.port-img img:hover {
+		transform: scale(1.1) rotate(0deg);
+	}
 
 }

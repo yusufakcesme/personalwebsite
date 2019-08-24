@@ -12,3 +12,30 @@ function dropdown() {
 	}
 
 }
+
+//--------------------------------------------
+
+var btn = document.queryselectorAll('.btn');
+var image = document.queryselectorAll('.port-img');
+
+
+function selectItem() {
+
+	removeActive();
+
+
+}
+
+function removeActive() {
+	btn.forEach(item => item.classList.remove('active'));
+}
+
+
+
+btn.forEach(item => item.addEventListener('click' selectItem));	
+
+
+
+
+
+
