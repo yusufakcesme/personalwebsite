@@ -10,6 +10,9 @@ body, html {
 	height: 100%;
 	outline: none;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 .section {
 	height: 100%;
@@ -98,7 +101,7 @@ body, html {
 	transform: translateY(-100%);
 	transition: 0.7s;
 }
-.dropdown ul {
+.dropdown ul{
 	opacity: 1 !important;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
@@ -106,17 +109,19 @@ body, html {
 	list-style: none;
 }
 .dropdown ul li {
-	text-decoration: none;
-	color: #fff;
-	text-shadow: 0 0 3px #fff;
 	font-size: 30px;
 	margin-bottom: 30px;
-	cursor: pointer;
-	transition: 0.3s;
 	text-transform: uppercase;
 }
 
-.dropdown ul li:hover {
+.dropdown ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0 0 3px #fff;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.dropdown ul li a:hover {
 	color: #fa7268;
 	text-shadow: 0 0 3px #fa7268;
 }
@@ -313,20 +318,25 @@ body, html {
 	flex-direction: column;
 	text-align: center;	
 }
-.port-options a {
+.port-options span {
 	padding-top: 20px;
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.5px;
 	color: #fff;
 	transition: 0.2s;
+	cursor: pointer;
 }
 
-.port-options a:hover {
+.port-options span:hover {
 	color: #fa7268;
 }
 .active {
 	color: #fa7268 !important;
+}
+
+.none {
+	display: none !important;
 }
 
 .port-right {
