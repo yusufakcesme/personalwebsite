@@ -369,45 +369,120 @@ html {
 
 /*---------------------------------------------*/
 
+.contact-container {
+	width: 90%;
+	height: 500px ;
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+.contact-left {
+	width: 30%;
+	height: 100%;
+}
+
+.contact-info i {
+	float: left;
+	font-size: 30px;
+	color: #fa7268;
+	margin-right: 20px;
+}
+.contact-info h4 {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 2px;
+}
+
+.contact-info p {
+	color: #ddd;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contact-info {
+	margin-left: 5%;
+	margin-top: 60px;
+	width: 100%;
+	align-items: center;
+}
+
+.contact-right {
+	width: 70%;
+	height: 100%;
+}
+
+.contact-right form {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+
+.contact-right form input {
+	margin-bottom: 50px;
+	padding: 10px 14px;
+	background: none;
+	border: 0;
+	outline: none;
+	border-bottom: 1px solid #6a6a6d;
+	color: #fff;
+	transition: 0.4s;
+}
+.contact-right form textarea {
+	padding: 10px 14px;
+	background: none;
+	border: 0;
+	outline: none;
+	border-bottom: 1px solid #6a6a6d;
+	color: #fff;
+	transition: 0.3s;
+	margin-bottom: 20px;
+}
+
+.contact-right form input:focus {
+	border-bottom: 1px solid #fa7268;
+}
+
+.contact-right textarea:focus {
+	border-bottom: 1px solid #fa7268;
+}
+
+.contact-right form input[type="button"] {
+	border: 1px solid #6a6a6d;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	background-color: #fff;
+	color: #07070b;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.3s;	
+}
+
+.contact-right form input[type="button"]:hover {
+	background-color: #fa7268;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+/*------------------------------------------*/
+
+footer {
+	width: 100%;
+	background-color: #0E0F13;
+}
+
+footer p {
+	color: #6A6A6D;
+	font-family: 'roboto', sans-serif;
+	text-align: center;
+	padding: 10px 0;
+	letter-spacing: 0.5px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*-------------------------------------------*/
 /*----------------RESPONSIVE------------------*/
 
 
@@ -432,6 +507,59 @@ html {
 		margin-left: 40%;
 	}
 	/*-------------------------------*/
+
+	#section-four {
+		height: 160%;
+	}
+
+	.contact-container {
+		width: 100%;
+		height: 500px ;
+		position: absolute;
+		margin-left: 0%;
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-left {
+		width: 90%;
+		height: 100%;
+	}
+
+	.contact-info i {
+		float: left;
+		font-size: 30px;
+		color: #fa7268;
+		margin-right: 20px;
+	}
+	.contact-info h4 {
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		margin-bottom: 2px;
+	}
+
+	.contact-info p {
+		color: #ddd;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.contact-info {
+		align-items: center;	
+		width: 100%;
+		padding-left: 20%;
+	}
+	.contact-right form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 50px;
+	}
+
+
+
 }
 
 @media only screen and (max-width: 1100px) {
