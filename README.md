@@ -1,5 +1,4 @@
 Hi.
-First of all, thank you for purchasing this template.
 This one-page personal template is an ideal desicion for the ones who need to speak to his abilities and inventive work. It's fully responsive and
 reactive.
 
