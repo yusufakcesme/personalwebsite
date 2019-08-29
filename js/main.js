@@ -5,10 +5,10 @@ function dropdown() {
 	var menu = document.getElementById('menu');
 
 	//scrolls the menu from up to down 100%
-	if (menu.style.transform === "translateY(-100%)") {
-		menu.style.transform = "translateY(0%)";
-	} else {
+	if (menu.style.transform === "translateY(0%)") {
 		menu.style.transform = "translateY(-100%)";
+	} else {
+		menu.style.transform = "translateY(0%)";
 	}
 
 }
